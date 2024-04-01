@@ -1,4 +1,4 @@
-import { TypeOf, z } from "zod";
+import { z } from "zod";
 
 export const jobFilterSchema = z.object({
   q: z.string().optional(),

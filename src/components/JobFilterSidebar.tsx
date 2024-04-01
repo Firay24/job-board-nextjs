@@ -11,6 +11,7 @@ import { redirect } from "next/navigation";
 const filterJobs = async (formData: FormData) => {
   "use server";
 
+  // throw new Error("Bajinga!")
   const values = Object.fromEntries(formData.entries());
 
   const { q, type, location, remote } = jobFilterSchema.parse(values);
